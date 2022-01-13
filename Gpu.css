@@ -1,0 +1,144 @@
+:root{
+    --very-light-pink: #c7c7c7;
+    --text-input-field: #F7F7F7;
+    --hospital-yellow: #F7FF00;
+    --borders: #E67E22;
+    --white: #FFFFFF;
+    --black: #000000;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px; 
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    background-image: url(https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2021/03/tarjetas-graficas-consolas-stock-criptomonedas-especuladores-amenazan-videojuegos-tradicionales-2261313.jpg?itok=KbRMAJFS);
+}
+header{
+    width: 70%;
+    height: 200px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FA8BFF;
+    background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+}
+header p{
+    font-weight: bold;
+    font-size: var(--md);
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.Mini-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 100px;
+    gap: 50px;
+}
+.BigBox{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    background-color: #FA8BFF;
+    background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+    border-radius: 20px;
+
+}
+.costos_luz{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.PPPP{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+.valores{
+    width: 70px;
+    height: 120px;
+    margin: 20px;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba( 255, 255, 255, 0.6 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 12px );
+    -webkit-backdrop-filter: blur( 12px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.Small-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.inputsito{
+    border: none;
+    background-color: var(--text-input-field);
+    border: 2px solid var(--hospital-yellow);
+    border-radius: 12px;
+    margin: 20px 0 10px;
+    height: 30px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+button{
+    height: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover{
+    border: 4px solid white;
+}
+h1{
+    text-align: center;
+}
+.Resultado-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cifras{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fila{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.t{
+    font-weight: bold;
+    font-size: var(--lg);
+}
+
+.Box{
+    width: 150px;
+    height: 40px;
+    background-color: white;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: var(--md);
+    text-align: center;
+    padding-top: 20px;
+
+}
+footer{
+    width: 100%;
+    background-color: white;
+    border: 5px dashed var(--hospital-yellow);
+    border-radius: 12px;
+    text-align: center;
+}

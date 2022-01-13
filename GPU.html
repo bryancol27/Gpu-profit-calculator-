@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Gpu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <title>Calculador ganancias</title>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Calcular Ganancias de minado: Tarjetas Nvidia</h1>
+            <p>Resultados en el dinero son promedios</p>
+        </header>
+
+        <div class="Mini-container">
+
+            <div class="costos_luz BigBox">
+                <h1>Costos KW por pais</h1>
+                <div class="primeraP PPPP">
+                    <div class="valores">
+                        <p class="pais">Estados Unidos</p>
+                        <p class="valor">0.19 €</p>
+                    </div>
+                    <div class="valores">
+                        <p class="pais">Mexico</p>
+                        <p class="valor">0.0046 €</p>
+                    </div>
+                    <div class="valores">
+                        <p class="pais">Ecuador</p>
+                        <p class="valor">0.072 €</p>
+                    </div>
+                    <div class="valores">
+                        <p class="pais">Colombia</p>
+                        <p class="valor">0.12 €</p>
+                    </div>
+                </div>   
+                <div class="segundP PPPP">
+                    <div class="valores">
+                        <p class="pais">Brazil</p>
+                        <p class="valor">0.082 €</p>
+                    </div>
+                    <div class="valores">
+                        <p class="pais">Canada</p>
+                        <p class="valor">0.11 €</p>
+                    </div>
+                    <div class="valores">
+                        <p class="pais">Argentina</p>
+                        <p class="valor">0.07 €</p>
+                    </div>
+                </div>
+            </div>
+
+            <form action="Tarjetas_de_video" class="BigBox">
+                <h1>Tarjetas y pais</h1>
+                <div class="Small-form">
+                    <label for="tarjeta">Por favor selecciona que tipo de tarjeta quieres examinar</label>
+                    <select name="tarjeta" id="tarjeta" onclick="Tarjeta()" class="inputsito">
+                        <option value="null"></option>
+                        <option value="0">RTX 3090</option>
+                        <option value="1">RTX 3080</option>
+                        <option value="2">RTX 3070</option>
+                        <option value="3">RTX 3060 TI</option>
+                        <option value="4">GTX 1080</option>
+                        <option value="5">GTX 1660 SUPER</option>
+                        <option value="6">GTX 1660 TI</option>
+                        <option value="7">GTX 1060</option>
+                        <option value="8">GTX 1050 TI</option>
+                    </select>
+            
+                    <label for="cantidad">Digite cuantas tarjetas va a usar</label>
+                    <input type="number" name="cantidad" id="cantidad" class="inputsito">
+            
+                    <label for="paises">Selecciona un pais para hacer un promedio de costos</label>
+                    <select name="paises" id="paises" onclick="Tarjeta()" class="inputsito">
+                        <option value="null"></option>
+                        <option value="Estados unidos">Estados Unidos</option>
+                        <option value="Mexico">Mexico</option>
+                        <option value="Ecuador">Ecuador</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="Brazil">Brazil</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Argentina">Argentina</option>
+                    </select>
+            
+                    <button class="inputsito" type="button" onclick="Cantidad_valor()">Calcular</button>
+            </form>
+
+                </div>
+
+            <div class="Resultados BigBox">
+                <h1>Resultados</h1>
+                <div class="Resultado-container">
+                    <div class="primera fila">
+                        <div class="cifras">
+                            <p class="t">Tarjeta Grafica</p>
+                            <p class="GT Box" id="Tarjeta_grafica"></p>
+                        </div>
+
+                        <div class="cifras">
+                            <p class="t">Consumo tarjeta</p>
+                            <p class="GT Box" id="consumoT"></p>
+                        </div>
+                    </div>
+                    <div class="segunda fila">
+                        <div class="cifras">
+                            <p class="t">Consumo total</p>
+                            <p class="GTT Box" id="consumoTT"></p>
+                        </div>
+
+                        <div class="cifras">
+                            <p class="t">Ganancia Bruta</p>
+                            <p class="GB Box" id="Bruta"></p>
+                        </div>
+                    </div>
+                    <div class="tercera fila">
+                        <div class="cifras">
+                            <p class="t">Ganancia Neta</p>
+                            <p class="GN Box" id="Neta"></p>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+        <footer>
+            Bryan Aranzales &copy;"Gpu profits"
+        </footer>
+    </div>
+    <script src="Gpus.js"></script>
+    <script src="Gpu.js"></script>
+
+</body>
+</html>
